@@ -132,6 +132,11 @@ h3 {
 .range:hover {
   opacity: 1; /* Fully shown on mouse-over*/
 }
+/* Mouse-over effects */
+.range:focus {
+  background-color: var(--Very-Pale-Blue);
+  cursor: pointer;
+}
 
 /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
 .range::-webkit-slider-thumb {
@@ -154,6 +159,17 @@ h3 {
 }
 
 .range::-webkit-slider-thumb:active {
+  box-shadow: 3px 15px 30px 5px var(--Soft-Cyan);
+  background-color: var(--Strongest-Cyan);
+  cursor: grabbing; /* Cursor on hover */
+}
+.range::-moz-range-thumb:hover {
+  background-color: var(--Strong-Cyan);
+  box-shadow: 3px 15px 30px 12px var(--Soft-Cyan);
+  cursor: pointer; /* Cursor on hover */
+}
+
+.range::-moz-range-thumb:active {
   box-shadow: 3px 15px 30px 5px var(--Soft-Cyan);
   background-color: var(--Strongest-Cyan);
   cursor: grabbing; /* Cursor on hover */
@@ -215,6 +231,9 @@ input:checked + .slider {
 
 input:focus + .slider {
   box-shadow: 0 0 1px #2196f3;
+}
+input:active + .slider {
+  box-shadow: 0 0 1px #046fc7;
 }
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);

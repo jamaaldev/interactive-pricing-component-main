@@ -13,7 +13,7 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
-    <div class="interactive__price__container">
+    <main class="interactive__price__container">
       <div class="interactivePricing">
         <img class="bg__pattern" src="./images/bg-pattern.svg" alt="background pattern svg" />
         <div class="pricing__content">
@@ -26,7 +26,7 @@
         <div class="pricing__wrap">
           <div class="pricing__card">
             <div class="pricing__charge">
-              <label class="pages" for="range"> 100K Pageviews </label>
+              <label class="pages"> </label>
               <div class="pricing__monthly">
                 <h1>$16.00</h1>
                 <span> / </span>
@@ -34,13 +34,15 @@
               </div>
             </div>
             <div class="pricing__range">
-              <input class="range" type="range" min="1" max="5" name="range" id="range" />
+              <label tabindex="-1">
+                <input class="range" type="range" min="1" max="5" name="range" id="range" />
+              </label>
             </div>
             <div class="pricing__switch">
               <label for="switch"> Monthly Billing </label>
               <!-- Rounded switch -->
               <label class="switch">
-                <input type="checkbox" min="1" max="2" id="switch" />
+                <input tabindex="0" type="checkbox" minlength="1" maxlength="2" id="switch" />
                 <span class="slider round"></span>
               </label>
               <label for="switch">Yearly Billing</label>
@@ -59,7 +61,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </main>
     <div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">JamaalDev</a>.</div>
     <script src="script.js"></script>
   </body>
