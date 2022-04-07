@@ -42,8 +42,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [My solution](https://jamaaldev.github.io/interactive-pricing-component-main/)
+- Live Site URL: [My live site](https://jamaaldev.github.io/interactive-pricing-component-main/)
 
 ## My process
 
@@ -62,20 +62,59 @@ Use this section to recap over some of your major learnings while working throug
 
 To see how you can add code snippets, see below:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+/* I Learn How To Customize the Range Slider,
+W3School Have Many Solution. */
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 45px; /* Set a specific slider handle width */
+  height: 45px; /* Slider handle height */
+  background: url(./images/icon-slider.svg); /* Green background */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--Strong-Cyan);
+  border-radius: 30px;
+  box-shadow: 3px 15px 30px 5px var(--Soft-Cyan);
+}
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.range::-webkit-slider-thumb:hover {
+  background-color: var(--Strong-Cyan);
+  box-shadow: 3px 15px 30px 12px var(--Soft-Cyan);
+  cursor: pointer; /* Cursor on hover */
+}
+
+.range::-webkit-slider-thumb:active {
+  box-shadow: 3px 15px 30px 5px var(--Soft-Cyan);
+  background-color: var(--Strongest-Cyan);
+  cursor: grabbing; /* Cursor on hover */
+}
+
+.range::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: url(./images/icon-slider.svg); /* Green background */
+  background-repeat: no-repeat;
+  background-position: center;
+
+  cursor: pointer; /* Cursor on hover */
 }
 ```
 
 ```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
+// i learn toggleAttribute for getting value true or false when i switch Slider the discount it helps me to use condition if. please dont use the same place that using toggleAttribute for condition  make another function past it in to.and make varaible yearDiscount global to save the fake memory value
+const pricingCharge = (charge) => {
+  switchSlide.onclick = (e) => {
+    yearDis = e.target.toggleAttribute("on");
+    yearDiscount(yearDis, charge);
+  };
 };
+
+// I also learn how to calculate discount in a year total money with discount added 25% below Both as Same, 75 means you only keeping 75% from 100% if they choose a yearly and 25% is the dicount you gave up
+${charge.price * 12 * 0.75}
+${(charge.price * 12 * 75) / 100}
 ```
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
@@ -90,16 +129,15 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Custom Range Slider](https://www.w3schools.com/howto/howto_js_rangeslider.asp) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [Custom Toggle Slider](https://www.w3schools.com/howto/howto_css_switch.asp) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@jamaaldev](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@jamaaldev](https://www.frontendmentor.io/profile/jamaaldev)
+- Twitter - [@jamaaldev](https://www.twitter.com/jamaaldev)
 
 **Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
