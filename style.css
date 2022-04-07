@@ -160,12 +160,14 @@ h3 {
 }
 
 .range::-moz-range-thumb {
-  width: 25px; /* Set a specific slider handle width */
-  height: 25px; /* Slider handle height */
+  width: 45px; /* Set a specific slider handle width */
+  height: 45px; /* Slider handle height */
   background: url(./images/icon-slider.svg); /* Green background */
   background-repeat: no-repeat;
   background-position: center;
-
+  background-color: var(--Strong-Cyan);
+  border-radius: 30px;
+  box-shadow: 3px 15px 30px 5px var(--Soft-Cyan);
   cursor: pointer; /* Cursor on hover */
 }
 
