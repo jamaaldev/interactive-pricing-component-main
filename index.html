@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./media/style__600.css" />
+    <title>Frontend Mentor | Interactive pricing component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="interactive__price__container">
+      <div class="interactivePricing">
+        <img class="bg__pattern" src="./images/bg-pattern.svg" alt="" />
+        <div class="pricing__content">
+          <img src="./images/pattern-circles.svg" alt="circles svg" class="circles" />
+          <div class="content">
+            <h1>Simple, traffic-based pricing</h1>
+            <p>Sign-up for our 30-day trial. No credit card required.</p>
+          </div>
+        </div>
+        <div class="pricing__wrap">
+          <div class="pricing__card">
+            <div class="pricing__charge">
+              <p>100K Pageviews</p>
+              <div class="pricing__monthly">
+                <h1>$16.00</h1>
+                <span> / </span>
+                <p class="year__month">month</p>
+              </div>
+            </div>
+            <div class="pricing__range"><input class="range" type="range" min="1" max="5" name="" id="range" /></div>
+            <div class="pricing__switch">
+              <p>Monthly Billing</p>
+              <!-- Rounded switch -->
+              <label class="switch">
+                <input type="checkbox" min="1" max="2" />
+                <span class="slider round"></span>
+              </label>
+              <p>Yearly Billing</p>
+              <p class="discount"></p>
+            </div>
+            <div class="pricing__trail">
+              <div class="list">
+                <ul class="trail">
+                  <li class="items">Unlimited websites</li>
+                  <li class="items">100% data ownership</li>
+                  <li class="items">Email reports</li>
+                </ul>
+              </div>
+              <button class="submit" type="submit">Start my trial</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.</div>
+    <script src="script.js"></script>
+  </body>
+</html>

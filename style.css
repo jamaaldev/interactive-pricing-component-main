@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&family=Overpass:wght@400;700&display=swap");
+:root {
+  --Soft-Cyan: hsl(174, 77%, 80%);
+  --Strongest-Cyan: hsl(174, 86%, 45%);
+  --Strong-Cyan: hsl(174, 93%, 48%);
+  --Light-Grayish-Red: hsl(14, 92%, 95%);
+  --Light-red: hsl(15, 100%, 70%);
+  --Pale-Blue: hsl(226, 100%, 87%);
+  --white: hsl(0, 0%, 100%);
+  --Very-Pale-Blue: hsl(230, 100%, 99%);
+  --Empty--Light-grayish--blue: hsl(224, 65%, 95%);
+  --Toggle--Light-grayish--blue: hsl(223, 50%, 87%);
+  --Text-grayish-blue: hsl(225, 20%, 60%);
+  --Dark-Desaturated-Blue: hsl(227, 35%, 25%);
+  --variant-font: "Manrope", sans-serif;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  background-color: var(--Very-Pale-Blue);
+  box-sizing: border-box;
+  /* position: relative; */
+}
+
+h2,
+h3 {
+  margin: 0;
+}
+.interactive__price__container {
+  background: var(--Very-Pale-Blue);
+  max-height: 770px;
+  height: 100vh;
+}
+.interactivePricing {
+  height: 300px;
+  z-index: -2;
+  background: var(--Very-Pale-Blue);
+}
+.bg__pattern {
+  width: 100%;
+  height: 450px;
+}
+
+.pricing__card {
+  background: var(--white);
+  padding: 10px 0;
+  border-radius: 10px;
+  box-shadow: 1px 1px 20px 5px #e0e6f3a1;
+}
+.pricing__content {
+  text-align: center;
+}
+.pricing__content {
+  margin-top: -390px;
+}
+.content {
+  margin-top: -120px;
+}
+.pricing__charge {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 50px;
+}
+.pricing__charge p {
+  color: var(--Text-grayish-blue);
+  font-size: var(--variant-font);
+}
+
+.pricing__monthly {
+  display: flex;
+  align-items: center;
+  font-family: var(--variant-font);
+}
+.pricing__monthly h1 {
+  font-size: 2.5em;
+  font-family: var(--variant-font);
+}
+.pricing__monthly span {
+  padding: 0 5px;
+  font-family: var(--variant-font);
+}
+
+.pricing__range {
+  text-align: center;
+}
+.pricing__range input {
+  width: 80%;
+}
+
+.pricing__trail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: solid #80808014 1px;
+  margin-top: 30px;
+  padding-top: 20px;
+}
+.trail {
+  list-style-image: url(./images/icon-check.svg);
+}
+
+.submit:hover {
+  background: var(--Dark-Desaturated-Blue);
+  color: var(--white);
+  cursor: pointer;
+}
+.attribution {
+  text-align: center;
+  font-size: 12;
+}
+
+/* The slider itself */
+.range {
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 10px; /* Specified height */
+  border-radius: 30px;
+  /* background: linear-gradient(90deg, var(--Soft-Cyan) 50%, var(--Empty--Light-grayish--blue) 50%); Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+  transition: opacity 0.4s;
+}
+
+/* Mouse-over effects */
+.range:hover {
+  opacity: 1; /* Fully shown on mouse-over*/
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 45px; /* Set a specific slider handle width */
+  height: 45px; /* Slider handle height */
+  background: url(./images/icon-slider.svg); /* Green background */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--Strong-Cyan);
+  border-radius: 30px;
+  box-shadow: 3px 15px 30px 5px var(--Soft-Cyan);
+}
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.range::-webkit-slider-thumb:hover {
+  background-color: var(--Strong-Cyan);
+  box-shadow: 3px 15px 30px 12px var(--Soft-Cyan);
+  cursor: pointer; /* Cursor on hover */
+}
+
+.range::-webkit-slider-thumb:active {
+  box-shadow: 3px 15px 30px 5px var(--Soft-Cyan);
+  background-color: var(--Strongest-Cyan);
+  cursor: grabbing; /* Cursor on hover */
+}
+
+.range::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: url(./images/icon-slider.svg); /* Green background */
+  background-repeat: no-repeat;
+  background-position: center;
+
+  cursor: pointer; /* Cursor on hover */
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--Toggle--Light-grayish--blue);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  bottom: 0px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+input:checked + .slider {
+  background-color: var(--Toggle--Light-grayish--blue);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+  background-color: var(--white);
+}
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

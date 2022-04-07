@@ -1,0 +1,130 @@
+@media only screen and (max-width: 600px) {
+  .pricing__trail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: solid #80808014 1px;
+    margin-top: 30px;
+    padding-top: 20px;
+    flex-direction: column-reverse;
+  }
+
+  .trail .items {
+    font-size: var(--variant-font);
+    color: var(--Text-grayish-blue);
+    margin-left: -40px;
+    margin-bottom: 10px;
+  }
+  .pricing__charge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 50px;
+    flex-direction: column;
+  }
+  .pricing__monthly {
+    display: flex;
+    top: 120px;
+    position: absolute;
+    align-items: center;
+    font-family: var(--variant-font);
+  }
+  .pricing__switch {
+    display: flex;
+    /* top: 137px; */
+    /* position: absolute; */
+    padding-top: 70px;
+    justify-content: space-between;
+    margin: 30px 30px;
+    align-items: center;
+    color: var(--Text-grayish-blue);
+    font-size: 12px;
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    margin: 0 6px;
+    height: 20px;
+  }
+  .pricing__wrap {
+    max-width: 330px;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 260px;
+    left: 0;
+  }
+  .discount::after {
+    content: "-25%";
+    background: antiquewhite;
+    color: #f44336;
+    padding: 2px 8px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-family: var(--variant-font);
+  }
+
+  .submit {
+    border: none;
+    background: var(--Dark-Desaturated-Blue);
+    color: var(--Pale-Blue);
+    padding: 14px 40px;
+    border-radius: 25px;
+    margin-right: 0px;
+  }
+  .trail {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .trail .items {
+    font-size: var(--variant-font);
+    color: var(--Text-grayish-blue);
+    margin-left: 25px;
+    margin-bottom: 10px;
+  }
+  .pricing__switch {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px 50px;
+    align-items: center;
+    color: var(--Text-grayish-blue);
+    font-size: var(--variant-font);
+  }
+  .pricing__wrap {
+    max-width: 550px;
+
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 240px;
+    left: 0;
+  }
+  .discount::after {
+    content: "25% discount";
+    background: antiquewhite;
+    color: #f44336;
+    padding: 5px 10px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-family: var(--variant-font);
+  }
+
+  .submit {
+    border: none;
+    background: var(--Dark-Desaturated-Blue);
+    color: var(--Pale-Blue);
+    padding: 14px 40px;
+    border-radius: 25px;
+    margin-right: 40px;
+  }
+}
