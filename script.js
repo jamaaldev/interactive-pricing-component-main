@@ -40,10 +40,10 @@ const pricingCharge = (charge) => {
 const yearDiscount = (discount, charge) => {
   if (discount) {
     document.querySelector(".pricing__monthly h1").innerText = `$${charge.price * 12 * 0.75}.00`;
-    document.querySelector(".pricing__charge p").innerText = `${charge.pages} Pageviews`;
+    document.querySelector(".pricing__charge .pages").innerText = `${charge.pages} Pageviews`;
     // document.querySelector(".pricing__monthly h1").innerText = `$${(charge.price * 12 * 75) / 100}.00`;
   } else {
-    document.querySelector(".pricing__charge p").innerText = `${charge.pages} Pageviews`;
+    document.querySelector(".pricing__charge .pages").innerText = `${charge.pages} Pageviews`;
     document.querySelector(".pricing__monthly h1").innerText = `$${charge.price}.00  `;
   }
 };
