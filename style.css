@@ -249,3 +249,26 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+.discount {
+  background: antiquewhite;
+  color: #f44336;
+  padding: 2px 5px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-family: var(--variant-font);
+}
+.total {
+  display: none;
+  position: absolute;
+  background: antiquewhite;
+  color: #f44336;
+  padding: 2px 5px;
+  font-size: 12px;
+  font-family: var(--variant-font);
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.total__show {
+  display: block;
+}
